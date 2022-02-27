@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
+    
     var body: some View {
         VStack{
             HStack{
@@ -20,7 +21,7 @@ struct ContentView: View {
             Image("Memoji2")
                     .resizable()
                     .frame(width: 50, height: 50)
-                    .clipShape(RoundedRectangle(cornerRadius: 25))
+                    .clipShape(Circle())
                     .padding()
             }
             .padding(.horizontal, 10)
@@ -62,8 +63,9 @@ struct ContentView: View {
         ScrollView(.vertical, showsIndicators: false){
             VStack(spacing: 10){
                 VStack{
-                        Image("PastedGraphic")
-                            .resizable()
+                        Edvora_Map_View()
+                        .frame(height: 150)
+                    
                     HStack{
                     HStack{
                     Text("#")
@@ -77,76 +79,77 @@ struct ContentView: View {
                                 .frame(width:20, height: 20)
                         Text("Date")
                         }
-                    }
+                    }.padding()
                 }.frame(maxWidth: .infinity, maxHeight: .infinity)
                     .padding(30)
                     .background(.thinMaterial)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
 //
                 VStack{
-                    Image("PastedGraphic")
-                        .resizable()
-                HStack{
-                HStack{
-                Text("#")
-                    .foregroundColor(.blue)
-                Text("Ride ID")
-                }
-                    Spacer()
-                    HStack{
-                    Image("Calender")
-                            .resizable()
-                            .frame(width:20, height: 20)
-                    Text("Date")
-                    }
-                }
+                        Edvora_Map_View()
+                        .frame(height: 150)
                     
+                    HStack{
+                    HStack{
+                    Text("#")
+                        .foregroundColor(.blue)
+                    Text("Ride ID")
+                    }
+                        Spacer()
+                        HStack{
+                        Image("Calender")
+                                .resizable()
+                                .frame(width:20, height: 20)
+                        Text("Date")
+                        }
+                    }.padding()
                 }.frame(maxWidth: .infinity, maxHeight: .infinity)
-                .padding(30)
-                .background(.thinMaterial)
-                .clipShape(RoundedRectangle(cornerRadius: 15))
+                    .padding(30)
+                    .background(.thinMaterial)
+                    .clipShape(RoundedRectangle(cornerRadius: 15))
 //
                 VStack{
-                    Image("PastedGraphic")
-                        .resizable()
-                HStack{
-                HStack{
-                Text("#")
-                    .foregroundColor(.blue)
-                Text("Ride ID")
-                }
-                    Spacer()
-                    HStack{
-                    Image("Calender")
-                            .resizable()
-                            .frame(width:20, height: 20)
-                    Text("Date")
-                    }
-                }
+                        Edvora_Map_View()
+                        .frame(height: 150)
                     
+                    HStack{
+                    HStack{
+                    Text("#")
+                        .foregroundColor(.blue)
+                    Text("Ride ID")
+                    }
+                        Spacer()
+                        HStack{
+                        Image("Calender")
+                                .resizable()
+                                .frame(width:20, height: 20)
+                        Text("Date")
+                        }
+                    }.padding()
                 }.frame(maxWidth: .infinity, maxHeight: .infinity)
-                .padding(30)
-                .background(.thinMaterial)
-                .clipShape(RoundedRectangle(cornerRadius: 15))
+                    .padding(30)
+                    .background(.thinMaterial)
+                    .clipShape(RoundedRectangle(cornerRadius: 15))
 //
                 VStack{
-                    Image("PastedGraphic")
-                        .resizable()
-                HStack{
-                HStack{
-                Text("#")
-                    .foregroundColor(.blue)
-                Text("Ride ID")
-                }
-                    Spacer()
+                        Edvora_Map_View()
+                        .frame(height: 150)
+                    
                     HStack{
-                    Image("Calender")
-                            .resizable()
-                            .frame(width:20, height: 20)
-                    Text("Date")
+                    HStack{
+                    Text("#")
+                        .foregroundColor(.blue)
+                    Text("Ride ID")
                     }
-                }
-            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                        Spacer()
+                        HStack{
+                        Image("Calender")
+                                .resizable()
+                                .frame(width:20, height: 20)
+                        Text("Date")
+                        }
+                    }.padding()
+                }.frame(maxWidth: .infinity, maxHeight: .infinity)
                     .padding(30)
                     .background(.thinMaterial)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
@@ -161,6 +164,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+.previewInterfaceOrientation(.portrait)
     }
 }
 }

@@ -11,6 +11,7 @@
 		1E002BBC27C695EA002BB72F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E002BBB27C695EA002BB72F /* ContentView.swift */; };
 		1E002BBE27C695EE002BB72F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E002BBD27C695EE002BB72F /* Assets.xcassets */; };
 		1E002BC127C695EE002BB72F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E002BC027C695EE002BB72F /* Preview Assets.xcassets */; };
+		1EEF7B7927CB839C00106E73 /* Edvora Map View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEF7B7827CB839C00106E73 /* Edvora Map View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1E002BBB27C695EA002BB72F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E002BBD27C695EE002BB72F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E002BC027C695EE002BB72F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1EEF7B7827CB839C00106E73 /* Edvora Map View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edvora Map View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				1E002BB927C695EA002BB72F /* EdvoraApp.swift */,
 				1E002BBB27C695EA002BB72F /* ContentView.swift */,
+				1EEF7B7827CB839C00106E73 /* Edvora Map View.swift */,
 				1E002BBD27C695EE002BB72F /* Assets.xcassets */,
 				1E002BBF27C695EE002BB72F /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEF7B7927CB839C00106E73 /* Edvora Map View.swift in Sources */,
 				1E002BBC27C695EA002BB72F /* ContentView.swift in Sources */,
 				1E002BBA27C695EA002BB72F /* EdvoraApp.swift in Sources */,
 			);
