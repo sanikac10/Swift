@@ -26,7 +26,7 @@ struct ContentView: View {
             }
             .padding(.horizontal, 10)
             Spacer()
-            HStack(spacing: 25){
+            HStack(spacing: 30){
             Text("Nearest")
                     .bold()
                     .underline( color: .blue)
